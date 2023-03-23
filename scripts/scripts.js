@@ -1,3 +1,4 @@
+// contador de días
 function countdown() {
     const cursoInicio = new Date("2023-04-21").getTime();
     const ahora = new Date().getTime();
