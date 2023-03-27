@@ -11,7 +11,7 @@ function countdown() {
 
     const diasRestantes = Math.floor(diferencia / dias);
 
-    document.getElementById("countdown").innerHTML = "Iniciamos el <strong> 21 de abril de 2023</strong>: <br>faltan " + diasRestantes + " días.</br >";
+    document.getElementById("countdown").innerHTML = "Iniciamos el <strong><br> 21 de abril de 2023</strong>: <br>faltan " + diasRestantes + " días.</br >";
 }
 
 countdown();
