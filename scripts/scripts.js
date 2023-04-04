@@ -4,6 +4,12 @@ function countdown() {
     const ahora = new Date().getTime();
     const diferencia = cursoInicio - ahora;
 
+    if (diferencia < 0) {
+        cursoInicio.innerHTML = 'Iniciamos clases el 26 de mayo';
+        clearInterval(intervalo);
+        return;
+    }
+
     const segundos = 1000;
     const minutos = segundos * 60;
     const horas = minutos * 60;
