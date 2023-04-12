@@ -1,6 +1,6 @@
 // contador de días
 function countdown() {
-    const cursoInicio = new Date("2023-04-22").getTime();
+    const cursoInicio = new Date("2023-04-28").getTime();
     const ahora = new Date().getTime();
     const diferencia = cursoInicio - ahora;
 
@@ -17,7 +17,7 @@ function countdown() {
 
     const diasRestantes = Math.floor(diferencia / dias);
 
-    document.getElementById("countdown").innerHTML = "Iniciamos el <strong><br> 21 de abril de 2023</strong>: <br>faltan " + diasRestantes + " días.</br >";
+    document.getElementById("countdown").innerHTML = "Iniciamos el <strong><br> 28 de abril de 2023</strong>: <br>faltan " + diasRestantes + " días.</br >";
 }
 
 countdown();
@@ -25,7 +25,7 @@ countdown();
 // Contador para la masterclass
 function actualizarContador() {
     const divContador = document.getElementById('contadorMasterClass');
-    const fechaEvento = new Date('2023-04-08T10:00:00'); // Cambia esta fecha por la de tu evento
+    const fechaEvento = new Date('2023-04-22T10:00:00'); // Cambia esta fecha por la de tu evento
     const fechaActual = new Date();
     const diferencia = fechaEvento - fechaActual;
 
