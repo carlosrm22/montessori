@@ -44,3 +44,28 @@ function actualizarContador() {
 
 const intervalo = setInterval(actualizarContador, 1000);
 actualizarContador();
+
+// modal para apmliar la imagen
+const modal = document.getElementById("myModal");
+const img = document.getElementById("myImg");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
+
+img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+const span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// Cerrar el modal al hacer clic fuera de la imagen
+modal.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
